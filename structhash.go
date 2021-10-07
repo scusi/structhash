@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"crypto/md5"
 	"crypto/sha1"
-	"x/crypto/sha3"
+	"golang.org/x/crypto/sha3"
 	"fmt"
 	"reflect"
 	"sort"
