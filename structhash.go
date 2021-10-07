@@ -63,7 +63,7 @@ func Sha1(c interface{}, version int) []byte {
 // Sha3 takes a data structure and returns its sha3 hash.
 // This is a shorthand for sha3.Sum(Dump(c, version)).
 func Sha3(c interface{}, version int) []byte {
-	sum := sha3.ShakeSum256(Dump(c, version))
+	sum := sha3.Sum256(Dump(c, version))
 	return sum[:]
 }
 
